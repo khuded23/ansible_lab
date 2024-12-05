@@ -1,0 +1,20 @@
+---
+
+myhosts:
+  hosts:
+  childen:
+    nat-hosts:
+      nat-host1:
+        ansible_host: 10.140.205.111
+      nat-host2:
+        ansible_host: 10.140.205.112
+    bird-routers:
+      bird-router1:
+        ansible_host: 10.140.205.109
+      bird-router2:
+        ansible_host: 10.140.205.110
+
+
+  vars:
+    ansible_user: "eve"
+    ansible_password: "eve"

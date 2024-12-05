@@ -1,0 +1,9 @@
+---
+
+#install apache in NAT routers 
+- name: play-Setup apache
+  hosts: nat-servers
+  become: true
+  become_user: root
+  roles: 
+    - haproxy
